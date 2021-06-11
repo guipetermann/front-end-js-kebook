@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kebook JS</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="content">
+  <div class="titulo">
+    <h1>Nossos Planos</h1>
+    <p>Selecione o número de clientes que deseja<br> gerenciar para ver nossos valores </p>
+  </div>
+  <div>
+    <div>
+      <p style="text-align: center;">SELCIONE A QUANTIDADE DE PERFIS</p>
+    </div>
+    <div class="slide">
+      <output type="number" id="textInput" value="">1</output>
+      <input type="range" name="rangeInput" min="1" max="10" step="1" value="1" onchange="updateTextInput(this.value);">
+      <p>CADA PERFIL CONTEMPLA</p>
+    </div>
+  </div>
+  <div class="planos">
+    <p>SELECIONE O PERÍODO DE SEU PLANO</p>
+    <div>
+      <div id="tab0" onclick="selectionTab('0')" class="primeiraTab divPlanos" align="center">
+        <p  id="detalhesAlarmeTabLabel0" class="labelFormularioValor">Mensal</p>
+      </div>
+      <div id="tab1" onclick="selectionTab('1');" class="meioTab" align="center">
+        <p id="detalhesAlarmeTabLabel1" class="labelFormularioValor divPlanos">Anual</p>
+      </div>
+    </div>
+  </div>
+  <div class="valoresPlano">
+    <div id="contentTab0" class="divTab">
+      <div>
+        <p>Plano Mensal</p>
+      </div>
+      <div>
+        <output type="number" id="mensal" value="">100</output>
+        <a id="valorMensal" href="valor100.html">Compre Agora</a>
+      </div>
+    </div>
+    <div id="contentTab1" class="divTab">
+      <div>
+        <p>Plano Anual</p>
+      </div>
+      <output type="number" id="anual" value="">200</output>
+      <a id="valorAnual" href="valor200.html">Compre Agora</a>
+    </div>
+  </div>
+
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

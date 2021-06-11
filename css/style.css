@@ -1,0 +1,64 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(133, 230, 232, 0.9191876579733456) 0%,
+    rgba(2, 209, 251, 1) 17%
+  );
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo {
+  text-align: center;
+}
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem;
+  font-size: 25px;
+  border-radius: 50px;
+}
+
+.labelFormularioValor {
+  font-size: 25pt;
+}
+.contentTab {
+  font-family: Segoe UI, Tahoma, Sans-Serif;
+  font-size: 10pt;
+  color: #000000;
+  font-weight: bold;
+}
+.primeiraTab {
+  cursor: default;
+}
+.meioTab {
+  cursor: default;
+}
+.planos > div {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff !important;
+  border-radius: 50px;
+}
+#tab0,
+#tab1 {
+  width: 50%;
+}
+.valoresPlano {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 50px 0px;
+}
+.divTab {
+  background-color: #fff;
+  width: 50%;
+  text-align: center;
+  border-radius: 50px;
+}
